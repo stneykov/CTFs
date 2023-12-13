@@ -34,7 +34,7 @@ At this moment I realized that there is nothing here,
 I did a quick look with *curl*
 
 
-```
+```shell
 curl https://delightful-mushroom-0076c5703.4.azurestaticapps.net
 ```
 
@@ -51,12 +51,14 @@ Saved 4 times between December 4, 2023 and December 4, 2023.
 
 Curl'ed each one to try if there is a flag hidden in:
 
-```curl --silent https://web.archive.org/web/20231204110732/https://delightful-mushroom-0076c5703.4.azurestaticapps.net/ | grep -n --color -C 1 "CTF"```
-
+```shell
+curl --silent https://web.archive.org/web/20231204110732/https://delightful-mushroom-0076c5703.4.azurestaticapps.net/ | grep -n --color -C 1 "CTF"
 ```
+
 
 and voala, the flag was in a HTML comment section
 
+```html
 28-
 29:  <!-- MilestoneCTF{once-on-the-internet-always-on-the-internet} -->
 30-
