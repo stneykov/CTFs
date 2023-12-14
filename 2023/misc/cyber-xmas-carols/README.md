@@ -62,3 +62,5 @@ MilestoneCTF… ?{hahaha-nice-try!... :)
 If we look closely at that poem, the second paragraph starts with an opening curly bracket and the last paragraph starts with a closing one. Reading the first letters on the few lines in between yields **{easy-flag}**. Now obviously that would be our flag. 
 
 Now let's remember what the description of the task noted: the flag should be reversed. Thus we get **MilestoneCTF{galf-ysae}** and that would be the solution :)
+
+## Author (stn)
