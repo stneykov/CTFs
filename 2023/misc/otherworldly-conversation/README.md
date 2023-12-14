@@ -3,62 +3,86 @@
 ## Description
 
 ```
-We love to sing the Cyber Xmas Carols!
-
-Probably you have already seen this flag, but now it's time to put it in the system. Some of you are trying to submit this flag since the annoucement of the Cyber Xmas! :)
-
-Note: To make this more fun, please put this flag in reverse! i.e. MilestoneCTF{abc1234} -> MilestoneCTF{4321cba}
+We captured this weird conversation… What does it mean? https://kind-ground-01f0dde03.4.azurestaticapps.net/
 
 ```
 
 ## Task analysis
 
-The description of the task claims that we've already seen the flag and people have been trying to submit it **SINCE THE ANNOUNCEMENT** of the Cyber Xmas :) Truth is, we did have an announcement email that contained some interesting things, but let's see. Here's the content of that announcement email:
+As with any other task that starts with a web page, I fire up my beloved Visual Studio Code with REST Client plugin and send a GET request to the page. The idea is to see whether anything is hidden within the HTML. Turns out I wasn't disappointed:
 
 ```
 
-Annual Milestone CyberXmas is back!
-
-;TLDR register at https://cyberxmas.milestone.dk and get familiar with the rules 😊
-NOTE: This year we introduce possibility to score extra points for submitting a write-up of the solutions – just tell us how you got the flag! (see the rules)
-
-Milestone's CyberXmas CTF, a festive quest so grand,
-invites you to join and take a stand.
-lively challenges await, in this digital land,
-even amid EO compliance, fun is at hand.
-strategize and solve, with toolchains so bright,
-twenty-four puzzles to test your cyber might.
-our twist this year, a call to write,
-narrate your journey, in the moon's soft light.
-extra points for stories, told with flair and insight,
-CTF begins with 'MilestoneCTF', a guiding light.
-Tales of cyber conquest, into the night,
-Flags await, hidden out of sight.
-
-{ enclosed within these curves, the secrets lie,
-explore the depths, let your codes fly.
-as you decrypt and delve, with a keen eye,
-seek the hidden truths, that in the code lie.
-your quest in this cyber realm, don't be shy,
-
-- a dash in the puzzle, a clue sly,
-follow the paths where the bytes lie.
-look beyond the text, to the graphic sky,
-a secret hidden, in an image nigh.
-grasp the unseen, let your spirits fly,
-
-} End your quest where secrets tie.
-In the spirit of the season, 'hohoho!' don't deny,
-A whisper of mystery, in the festive sky!
-
-
-
-MilestoneCTF… ?{hahaha-nice-try!... :)
+          <div class="time">
+            Today at 11:41
+          </div>
+          <div class="message psirt deleted">
+            Hello
+          </div>
+          <div class="message chatbot deleted">
+            Hi, how can I help you?
+          </div>
+          <div class="message psirt deleted">
+            Do you know about any interesting encoding I can use for a CTF challenge?
+          </div>
+          <div class="message chatbot deleted">
+            Yes, I do. There is one that can fit 16 bits into a single character. It is useful, for example, for tweeting
+            long posts.
+          </div>
+          <div class="message psirt">
+            𒁄𖤠𓍯ꔠ陥啮院驳樶栵琶
+          </div>
+          <div class="message chatbot">
+            𖡅顡ꍴ啹鵴𓉡𒀠驮ᔮ
+          </div>
+          <div class="message psirt">
+            鵔𐙡啫𒁹噵素𓁥啥𓅩𓈠驨鬠陬潧舠ꍩ𓅥𒁴驮襃𠅆鹦𓉴𐙩执𒁭驲餭𓉡扡𐙩𒁴阭𓄭𐙩ꍧ扥𔕴驥𠍴
+          </div>
+          <div class="message chatbot">
+            鹎驣𒀠驮唡啉𒁨驰𒄠𒁥ꍰ啥鹷ꍬꌠꉩ啥鵴啥鵣ꍡ马鱮捥砠𐙡縠鴠ꍥ啰𒁹啵鹷鵴𓄠ꕯ𓉥鹨鱮騠𓅬瑥
+          </div>
+          <div class="message psirt">
+            𒁎唬鵴𓉡𓄧鸠捴褠陨ꉮ啳𒁦啲𒁹𓁵鴠ꍥ捰
+          </div>
+          <div class="message chatbot">
+            陈𒅰啹𒁴售驍𓁲啹鵃鹲𓉳陭捳
+          </div>
 
 ```
+
+There seems to be a hidden conversation (see the div tags with class deleted that aren't showing up in the page), stating that there is an encoding which can fit 16 bits into a single character and they also hint at that being used by twitter. OK, sure, I guess we could google that up.
+
+I immediately stumbled upon this article: https://qntm.org/twitcodings 
+It has mentions of **Base2048** and **Base65536**.
 
 ## Solution
 
-If we look closely at that poem, the second paragraph starts with an opening curly bracket and the last paragraph starts with a closing one. Reading the first letters on the few lines in between yields **{easy-flag}**. Now obviously that would be our flag. 
+I went for Base2048 first. CyberChef does not seem to be able to decode either of the two, so I had to google for another online decoder. Found this: https://nerdmosis.com/tools/encode-and-decode-base2048, but it couldn't decode the text from Base2048, so I thought I should move on. 
 
-Now let's remember what the description of the task noted: the flag should be reversed. Thus we get **MilestoneCTF{galf-ysae}** and that would be the solution :)
+Found a Base65536 decoder at https://www.better-converter.com/Encoders-Decoders/Base65536-Decode and I input all the jibberish text once again.
+
+```
+
+𒁄𖤠𓍯ꔠ陥啮院驳樶栵琶
+𖡅顡ꍴ啹鵴𓉡𒀠驮ᔮ
+鵔𐙡啫𒁹噵素𓁥啥𓅩𓈠驨鬠陬潧舠ꍩ𓅥𒁴驮襃𠅆鹦𓉴𐙩执𒁭驲餭𓉡扡𐙩𒁴阭𓄭𐙩ꍧ扥𔕴驥𠍴
+鹎驣𒀠驮唡啉𒁨驰𒄠𒁥ꍰ啥鹷ꍬꌠꉩ啥鵴啥鵣ꍡ马鱮捥砠𐙡縠鴠ꍥ啰𒁹啵鹷鵴𓄠ꕯ𓉥鹨鱮騠𓅬瑥
+𒁎唬鵴𓉡𓄧鸠捴褠陨ꉮ啳𒁦啲𒁹𓁵鴠ꍥ捰
+陈𒅰啹𒁴售驍𓁲啹鵃鹲𓉳陭捳
+
+```
+
+This time I got some real readable text back..
+
+```
+
+Do you mean base65536?
+Exactly that one.
+Thank you! Here is the flag: MilestoneCTF{fitting-more-data-into-a-single-tweet}
+Nice one! I hope people will like the challenge. Can I help you with something else?
+No, that's it. Thanks for your help.
+Happy to. Merry Christmas.
+
+```
+
+I did indeed like the challenge! The answer was **MilestoneCTF{fitting-more-data-into-a-single-tweet}**
