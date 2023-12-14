@@ -19,13 +19,13 @@ Depends where you're stuck, pick your hint :)
 
 ## Task analysis
 
-As with any other web challenge, let's fire up the page in a browser. We're greeted by the message:
+As with any other web challenge, let's fire up the page in a browser (or VSCode :) ). We're greeted by the message:
 
 ```
 This page is only accessible from MilestoneBrowser.
 ```
 
-That's interesting. Let's examine the page's HTML for anything interesting. You can do that by right clicking anywhere within the page and selecting "View page source" on Chrome (I assume every browser has its own option) or just fire up the developer tools - this is usually accessed by pressing F12. Here's the HTML:
+That's interesting. Let's examine the page's HTML for anything interesting. You can do that by right clicking anywhere within the page and selecting "View page source" on Chrome (I assume every browser has its own option), fire up the developer tools - this is usually accessed by pressing F12 or fire up a GET request through VSCode's REST plugin. Here's the HTML:
 
 ```html
 <html>
