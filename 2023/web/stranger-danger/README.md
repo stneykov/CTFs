@@ -17,7 +17,7 @@ Depends where you're stuck, pick your hint :)
 
 ```
 
-## Task analysis
+## Task analysis & solution
 
 As with any other web challenge, let's fire up the page in a browser (or VSCode :) ). We're greeted by the message:
 
@@ -40,8 +40,6 @@ That's interesting. Let's examine the page's HTML for anything interesting. You 
 
 
 Nothing interesting in the HTML.. Let's think about this message... Is there a way for us to actually present ourselves as working from a 'MilestoneBrowser'?
-
-## Solution
 
 There might actually be a way, through HTTP headers. 
 HTTP headers are a way for clients and servers to pass additional information in these requests. Looking through the list of headers at https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers, there seems to be a good candidate - User-Agent:

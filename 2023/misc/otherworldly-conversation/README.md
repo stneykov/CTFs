@@ -7,7 +7,7 @@ We captured this weird conversation… What does it mean? https://kind-ground-01
 
 ```
 
-## Task analysis
+## Task analysis & solution
 
 As with any other task that starts with a web page, I fire up my beloved Visual Studio Code with REST Client plugin and send a GET request to the page. The idea is to see whether anything is hidden within the HTML. Turns out I wasn't disappointed:
 
@@ -54,8 +54,6 @@ There seems to be a hidden conversation (see the div tags with class deleted tha
 
 I immediately stumbled upon this article: https://qntm.org/twitcodings 
 It has mentions of **Base2048** and **Base65536**.
-
-## Solution
 
 I went for Base2048 first. CyberChef does not seem to be able to decode either of the two, so I had to google for another online decoder. Found this: https://nerdmosis.com/tools/encode-and-decode-base2048, but it couldn't decode the text from Base2048, so I thought I should move on. 
 

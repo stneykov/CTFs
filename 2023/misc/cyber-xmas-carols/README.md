@@ -11,7 +11,7 @@ Note: To make this more fun, please put this flag in reverse! i.e. MilestoneCTF{
 
 ```
 
-## Task analysis
+## Task analysis & solution
 
 The description of the task claims that we've already seen the flag and people have been trying to submit it **SINCE THE ANNOUNCEMENT** of the Cyber Xmas :) Truth is, we did have an announcement email that contained some interesting things, but let's see. Here's the content of that announcement email:
 
@@ -57,7 +57,6 @@ MilestoneCTF… ?{hahaha-nice-try!... :)
 
 ```
 
-## Solution
 
 If we look closely at that poem, the second paragraph starts with an opening curly bracket and the last paragraph starts with a closing one. Reading the first letters on the few lines in between yields **{easy-flag}**. Now obviously that would be our flag. 
 
