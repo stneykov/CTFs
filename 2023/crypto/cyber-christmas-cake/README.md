@@ -2,10 +2,11 @@
 
 ## Tools
 
-**nmap** – a network scanner, useful for scanning certain hosts for open ports and figuring out what is listening on those
-**telnet client tool** – command-line tool used for initiating a connection to the target machine, could be installed as a Windows feature (PuTTy is also an option here, or any other tool that can perform the same)
+**john the ripper** - password cracker tool, our tool of choice
 
-*some IDE and a bit of programming knowledge might go a long way with the last part of the solution, although there probably is a tool online that could help with the same.
+**hashcat** - another password 'recovery' utility. This one seems a bit more advanced than john, with more options, GPU support etc. I also find it harder to use
+
+**office2john** - extracts hashes from encrypted office files
 
 
 ## Description
