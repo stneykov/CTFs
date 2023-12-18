@@ -1,4 +1,4 @@
-# Otherworldly conversation (misc)
+# Otherworldly conversation (misc) (author: stn)
 
 ## Description
 
@@ -70,7 +70,7 @@ Found a Base65536 decoder at https://www.better-converter.com/Encoders-Decoders/
 
 ```
 
-This time I got some real readable text back..
+This time I got some real readable text back:
 
 ```
 
@@ -83,6 +83,4 @@ Happy to. Merry Christmas.
 
 ```
 
-I did indeed like the challenge! The answer was **MilestoneCTF{fitting-more-data-into-a-single-tweet}**
-
-## Author (stn)
+I did indeed like the challenge! The flag was **MilestoneCTF{fitting-more-data-into-a-single-tweet}**
