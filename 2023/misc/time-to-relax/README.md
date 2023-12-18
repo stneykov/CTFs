@@ -1,4 +1,4 @@
-# Time to relax... (misc)
+# Time to relax... (misc) (author: stn)
 
 ## Tools
 
@@ -27,7 +27,7 @@ Comments: NDQgNjkgNjQgMjAgNzkgNmYgNzUgMjAgNjcgNmYgMjAgNzQgNjggNzIgNmYgNzUgNjcgNj
 
 ```
 
-Those are definitely Base64 encoded strings, but as soon as I put the first one in CyberChef, I got this back:
+Those are definitely Base64 encoded, but as soon as I put the first one in CyberChef, I got this back:
 
 ```
 
@@ -55,20 +55,20 @@ Comments: Did you go through them all? :D
 
 ```
 
-Ok, it seems like those were there just to throw us off (and throw us off they did :D).
+Ok, it seems like those were put there just to throw us off (and throw us off they did :D).
 
 Let's now open the file in Audacity or Wavacity or any other similar program. One of the most intuitive actions to perform would be to check the spectrogram or look for additional tracks within the file. VLC was showing one track, but Wavacity manages to show us three:
 
-![Alt text](1.png)
+![Image preview](1.png)
 
 Let's show the spectrogram for each of these. You can do that by clicking the dropdown on each track and selecting Spectrogram:
 
-![Alt text](2.png)
+![Image preview](2.png)
 
 Revealing the spectrogram on the third track also reveals the flag :) 
 
-![Alt text](3.png)
+![Image preview](3.png)
 
-The answer is **MilestoneCTF{jingle-bells-jingle-bells}**
+The flag is **MilestoneCTF{jingle-bells-jingle-bells}**
 
 ## Author (stn)
