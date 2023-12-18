@@ -1,4 +1,4 @@
-# Stranger Danger! (web)
+# Stranger Danger! (web) (author: stn)
 
 ## Tools
 
@@ -131,6 +131,4 @@ MilestoneCTF{http-headers-are-fun}
 ```
 
 
-It seems like we ran to the end! The answer is **MilestoneCTF{http-headers-are-fun}**
-
-## Author (stn)
+It seems like we ran to the end! The flag is **MilestoneCTF{http-headers-are-fun}**
