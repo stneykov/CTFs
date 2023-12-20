@@ -1,4 +1,4 @@
-# Mystery box (misc) (author: WIP)
+# Did you notice..? (forensics) (author: aldi)
 
 ## Tools
 
@@ -7,3 +7,4 @@
 
 
 ## Task analysis & solution
+

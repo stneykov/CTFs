@@ -1,4 +1,4 @@
-# Mystery box (misc) (author: WIP)
+# Breached server (forensics) (author: stn)
 
 ## Tools
 

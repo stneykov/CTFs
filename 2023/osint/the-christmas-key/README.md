@@ -1,4 +1,4 @@
-# Mystery box (misc) (author: WIP)
+# The Christmas key (osint) (author: stn)
 
 ## Tools
 
