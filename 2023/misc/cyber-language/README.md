@@ -2,6 +2,7 @@
 
 ## Tools
 
+**telnet client tool** – command-line tool used for initiating a connection to the target machine, could be installed as a Windows feature (PuTTy is also an option here, or any other tool that can perform the same)
 
 ## Description
 
