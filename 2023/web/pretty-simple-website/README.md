@@ -1,4 +1,4 @@
-# Mystery box (misc) (author: WIP)
+# Pretty simple website (web) (author: WIP)
 
 ## Tools
 

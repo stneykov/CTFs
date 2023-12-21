@@ -1,4 +1,4 @@
-# Mystery box (misc) (author: WIP)
+# Not as it looks like (stegano) (author: stn)
 
 ## Tools
 
