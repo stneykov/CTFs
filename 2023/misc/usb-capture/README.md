@@ -94,4 +94,4 @@ Happy holidays1Backspace1q
 
 It goes without saying that the script is incomplete. For example, we need to replace the brackets ([]) with the curly equivalent, whenever there's a shift modifier (0x02 for the first byte). We also have 'Backspace' in the output, which we don't handle. But the output is comprehensive enough for us to modify on the go and figure out the flag: **MilestoneCTF{we-are-watching-YOUR-keystrokes-3:)}**
 
-PS. There is a much more complete python script at https://github.com/carlospolop-forks/ctf-usb-keyboard-parser which could also be used. The README of the github repo also provides pointers into how the keystroke data should be formatted beforehand
+PS. There is a much more complete python script at https://github.com/carlospolop-forks/ctf-usb-keyboard-parser which could also be used. The README of the github repo also provides pointers into how the keystroke data should be formatted beforehand.
