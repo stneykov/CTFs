@@ -16,6 +16,8 @@ We managed to capture a message containing the flag. Unfortunately, the flag is 
 MilestoneCTF{kRVmqUDmNbH8pjKYbZIsbQ==}
 ```
 
+[public_key.key](./public_key.key)
+
 ## Task analysis & solution
 
 In the description of this challenge, we are also provided with a public_key.key file, that contains the public part of the key used to encrypt. Our task here is to generate a private key, which we can then use to decrypt the flag. 

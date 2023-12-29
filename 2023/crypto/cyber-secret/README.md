@@ -14,6 +14,8 @@
 Santa locked next flag in encrypted zip file. Please help the elf get it!
 ```
 
+[my_xmas_flag.zip](./my_xmas_flag.zip)
+
 ## Task analysis & solution
 
 As the description states, we're provided with an encrypted zip file. And as with all such challenges, I fired up zip2john to extract the hash, which I would subsequently try to figure out with **john**. This didn't exactly go as planned.
