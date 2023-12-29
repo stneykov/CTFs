@@ -57,20 +57,20 @@ foreach ($imageFile in $imageFiles)
 }
 ```
 
-We end up with similar output (just the first 100 symbols here)
+We end up with this output (just the first 100 symbols here, rest omitted for brevity):
 
 ```shell
 0000010101010111100011110101000000000000011110101010100011110111101111011110100000000000001111010101...
 ```
 
-Looking at the gif, it starts with a long open eyed pause, then four quick blinks, one drawn out blink and a quick pause. What we can assume from that is:
+Looking at the gif, it starts with a long open eyed phase, then four quick blinks, one drawn out blink and a quick pause. What we can assume from that is:
 1. a quick blink (dot) is 10
 2. a long blink (dash) is 11110
 3. the starter sequence is 00000
 4. the character separator is 00
 5. whatever is left (000000000000) is the word separator
 
-With those assumptions in mind, we can do some quick replacements in our output file either with a text editor or another script (update the old one)
+With those assumptions in mind, we can do some quick replacements in our output file either with a text editor or another script (we could update the old one)
 
 ```powershell
 $outputContent = Get-Content -Path gif_output.txt -Raw
@@ -78,9 +78,9 @@ $outputContent = $outputContent -replace '11110', '-' -replace '10', '.' -replac
 $outputContent | Out-File -FilePath morse_code.txt -Force
 ```
 
-It is important we do the 11110 first, because doing 10 before that will mess up the output.
+It is important we do the 11110 first, because doing 10 before that will mess up the end result.
 
-We end up with this representation of morse code:
+What we get is this representation of morse code:
 
 ```shell
 ....- -.. -.... ----. -.... -.-. -.... ..... --... ...-- --... ....- -.... ..-. -.... . -.... ..... ....- ...-- ..... ....- ....- -.... --... -... -.... --... -.... ----. -.... -.... --... ...-- ..--- -.. -.... .---- --... ..--- -.... ..... ..--- -.. -.... ...-- -.... ..-. -.... ..-. -.... -.-. --... -.. 
