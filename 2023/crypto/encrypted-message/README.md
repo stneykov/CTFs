@@ -16,7 +16,7 @@ We managed to capture a message containing the flag. Unfortunately, the flag is 
 MilestoneCTF{kRVmqUDmNbH8pjKYbZIsbQ==}
 ```
 
-[public_key.key](./public_key.key)
+> [public_key.key](./public_key.key)
 
 ## Task analysis & solution
 

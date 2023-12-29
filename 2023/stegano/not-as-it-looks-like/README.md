@@ -5,7 +5,7 @@
 ```shell
 There is a juicy secret hiden in the image. Can you figure out what it is?
 ```
-![Image preview](NotAsItLooksLike.png)
+[NotAsItLooksLike.png](NotAsItLooksLike.png)
 
 ## Task analysis & solution
 

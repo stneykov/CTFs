@@ -14,6 +14,7 @@
 ```
 Do you want to try our secret Cyber Christmas Cake recipe? Just open the file!
 ```
+> [Cake.doc](./Cake.doc)
 
 ## Task analysis & solution
 

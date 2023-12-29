@@ -12,6 +12,8 @@ Can you get the flag from this capture?
 Note: the flag is case sensitive
 ```
 
+> [usb.pcap](./usb.pcap)
+
 ## Task analysis & solution
 
 The task provides a usb.pcap file. I didn't even know these could exist, but apparently you can capture USB data with Wireshark :) I did a quick investigation and the GET DESCRIPTOR Request/Response packets should contain information about the USB device that is being captured here. In our case there are two pairs of these at the beginning:

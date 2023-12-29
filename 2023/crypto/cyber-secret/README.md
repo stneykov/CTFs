@@ -14,7 +14,7 @@
 Santa locked next flag in encrypted zip file. Please help the elf get it!
 ```
 
-[my_xmas_flag.zip](./my_xmas_flag.zip)
+> [my_xmas_flag.zip](./my_xmas_flag.zip)
 
 ## Task analysis & solution
 
