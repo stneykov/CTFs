@@ -12,6 +12,8 @@ pngcheck is very useful here for sanity checks between chunk correction, althoug
 The present is hidden in the box… but how to open it?
 ```
 
+> [file](./file)
+
 ## Task analysis & solution
 
 We are provided with a single file without an extension in the challenge's description. First step would be to figure out what the file is. So let's run the file command in Kali:

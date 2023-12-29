@@ -11,6 +11,8 @@ We got our hands on this network capture, can you figure out what happened?
 
 ```
 
+> [capture.pcapng](./capture.pcapng)
+
 ## Task analysis & solution
 
 We're provided with a capture.pcap file in this challenge. The extension suggests we would require the beloved wireshark tool to go through the capture and figure out what is going on.

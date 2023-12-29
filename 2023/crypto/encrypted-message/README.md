@@ -16,9 +16,11 @@ We managed to capture a message containing the flag. Unfortunately, the flag is 
 MilestoneCTF{kRVmqUDmNbH8pjKYbZIsbQ==}
 ```
 
+> [public_key.key](./public_key.key)
+
 ## Task analysis & solution
 
-In the description of this challenge, we are also provided with a public_key.key file, that contains the public part of the key used to encrypt. Our task here is to generate a private key, which we can then use to decrypt the flag. 
+In the description of this challenge, we are also provided with a public_key.key file, that contains the public part of the key used to encrypt communication. Our task here is to generate a private key, which we can then use to decrypt the flag. 
 
 The public key we have is an RSA key:
 
@@ -31,7 +33,7 @@ Modulus:
 Exponent: 65537 (0x10001)
 ```
 
-It is actually a very small number of bits for the modulus (typically a minimum of 512), so that should make the task easy-ish.
+This is actually a very small number of bits for the modulus (typically a minimum of 512), so that should make the task easy-ish.
 
 But first, in order to solve this, we need to know how RSA keys are formed. Let's have the basics outlined here:
 

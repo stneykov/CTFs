@@ -11,6 +11,8 @@ Sit back, play music and enjoy the Xmas spirit ;)
 
 ```
 
+> [play-me.wav](./play-me.wav)
+
 ## Task analysis & solution
 
 We are presented with a play-me.wav file in the description of the task. I played it in VLC and it seems like a normal Christmas song, so I decided to check the codec / media information from within VLC player. That can be done by going to Tools -> Media Information.
