@@ -1,17 +1,22 @@
+# Santa the Security Guy (stegano) (author: snn)
 
-# CTF Milestone 2023 Cyber Xmass
+## Tools
 
-Santa the Security Guy
+binwalk, strings, file, exiftool are all decent investigation tools for hidden data within files or metadata
 
-![Alt text](image-header.png)
+## Description
 
-Write-up
+```
+We have a very nice picture of Santa Claus as a Video Security Guy. Is it hidding some secrets?
+```
+
+> [security_santa_claus.png](./security_santa_claus.png)
+
+## Task analysis & solution
 
 Here in this stegano category challenge we have a file to download - **security_santa_claus.png**
 
-Saved in ~/Desktop/cyber folder
-
-The first thing that came to my mind was to open a console and use the [exif](https://en.wikipedia.org/wiki/Exif) data analyzer tool and see what we have inside. I used `exiftool` from kali distro:
+The first thing that came to my mind was to open a console and use the [exif](https://github.com/exiftool/exiftool) data analyzer tool and see what we have inside. I used `exiftool` from Kali Linux:
 
 ```shell
 exiftool security_santa_claus.png
@@ -82,16 +87,17 @@ ZvyrfgbarPGS{qvt-qrrc-naq-svaq-lbhe-jnl-gb-lbhe-fbhy}PK
 IEND
 ```
 
-I've got interested in the text before IEND tag.
+I got interested in the text before the IEND tag, but it is important to note that the PNG file actually hides two zipped files that are visible in the strings output above - `flag.txt` and `Milestone_EULA_en-US.pdf`. Those are decoys, but could be easily extracted by changing the extension of the file to zip :) The string `ZvyrfgbarPGS{qvt-qrrc-naq-svaq-lbhe-jnl-gb-lbhe-fbhy}` is actually a comment added to one of those files.
 
 From the previous CTFs we were introduced to [dcode.fr](https://www.dcode.fr) web site:
+
 ![Alt text](image-dcode.fr.png)
 
-There is a section where it can try to find the cypher so let's give it a try:
+There is a section where it can try to find the cypher, so let's give it a try:
 
 ![Alt text](image-dcode.fr.analyze.png)
 
-On the left side there are results:
+On the left side there are the results:
 
 ![Alt text](image-dcode.fr.analyze.result.png)
 
