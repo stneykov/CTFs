@@ -52,12 +52,12 @@ Session completed
 
 We actually got the password on one of the last few lines - **santa123**. Now let's open the word file with it. It contains the recipe for a Blue Cyber Christmas Cake and a flag right at the bottom.
 
-```word
+```shell
 
-Blue Cyber Christmas Cake Recipe
+#Blue Cyber Christmas Cake Recipe
 
-NOTE: It is not safe to make and eat this AI generated cake!
-Ingredients:
+#NOTE: It is not safe to make and eat this AI generated cake!
+#Ingredients:
 
 ........................................
 
