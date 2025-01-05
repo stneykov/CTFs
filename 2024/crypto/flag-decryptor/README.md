@@ -123,7 +123,7 @@ private static BigInteger[] GenerateMersenne()
 }
 ```
 
-And then my updated program would look like this:
+And then my updated program would look like this, where I would just decrypt an integer with its corresponding Marsenne prime:
 
 ```csharp
 using System.Numerics;
