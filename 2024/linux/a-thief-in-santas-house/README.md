@@ -66,9 +66,9 @@ elf@fd3414fe8fed:~$ sudo /usr/bin/less /root/sharedsecret.txt | cat
 The flag is really near!
 ```
 
-Of course, that would've been too easy.. The good thing is that most of the time these viewer programs have a way to execute shell commands. In the case with LESS, a simple Google search reveals that you can do that with an exclamation mark in front or just enter interactive shell mode by doing !sh. 
+Of course, that would've been too easy.. The good thing is that most of the time these viewer programs have a way to execute shell commands. In the case with LESS, a simple Google search reveals that you can do that with an exclamation mark in front or just enter interactive shell mode by doing ``!sh``. 
 
-So, !ls /root should work inside LESS. Let's try that:
+So, ``!ls /root`` should work inside LESS. Let's try that:
 
 ```shell
 elf@fd3414fe8fed:~$ sudo /usr/bin/less /root/sharedsecret.txt
