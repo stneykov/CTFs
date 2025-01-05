@@ -95,7 +95,7 @@ while (count < parsed.Length)
 - The ``cipher`` array is XORed with successive Mersenne primes to produce the ASCII values of the decrypted flag characters.
 - The ``count`` variable ensures that only one encrypted value is decrypted per valid Mersenne prime.
 
-There is an important remark that needs to be made here. Even though the loop goes from ``count`` to ``parsed.Length`` (which is a very big number!), each of the 32 integers will be decrypted by a subsequent Marsenne prime.
+There is an important remark that needs to be made here. **Even though the loop goes from ``count`` to ``parsed.Length`` (which is a very big number!), each of the 32 integers will be decrypted by a subsequent particular Marsenne prime.**
 
 Now, the choice of Mersenne primes ensures the challenge is computationally interesting since generating primes requires validation and grows exponentially. This makes printing the flag by just running the program extremely time inefficient, yet not impossible. There are some optimizations that could be done. For example, the current function for checking primes is extremely slow. Using advanced algorithms like the Sieve of Eratosthenes or the Miller-Rabin one would greatly improve performance. Using parallel processing to compute primes would also help a bunch. 
 
@@ -126,9 +126,6 @@ private static BigInteger[] GenerateMersenne()
 And then my updated program would look like this:
 
 ```csharp
-
-
-
 using System.Numerics;
 
 namespace FlagDecryptor
