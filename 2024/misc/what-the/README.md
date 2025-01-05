@@ -1,4 +1,4 @@
-# What the..? (forensics) (authors: M1dwinter.sln)
+# What the..? (misc) (author: stn)
 
 ## Description
 
@@ -14,7 +14,7 @@ We have a fancy new application. Run it and retrieve the flag
 
 The challenge presents a sequence of symbols such as +, -, [ ], ., and >. At first glance, this might seem confusing, but the clue lies in recognizing the pattern. The goal is to identify what this sequence represents and then use the appropriate tools to extract the flag.
 
-If you’re new to CTFs or programming, don’t worry! When faced with an unusual sequence like this, a good first step is to Google key elements of the sequence (e.g., + > [ ]). This search leads us to Brainfuck, a minimalist esoteric programming language known for its unique syntax and challenging code structure.
+When faced with an unusual sequence like this, a good first step is to Google key elements of the sequence (e.g., + > [ ]). This search leads us to Brainfuck, a minimalist esoteric programming language known for its unique syntax and challenging code structure.
 
 #### What is Brainfuck?
 Brainfuck operates with an array of memory cells, a pointer, and a limited set of commands like +, -, >, <, [, ], and .. It is notoriously difficult to read, but it can output meaningful text when interpreted.
