@@ -1,7 +1,11 @@
 # Securing Santa's VMS
 
+## Description
+
 Santa asked the Elves to secure his VMS. They were so smart that they got the latest, unpublished XProtect Hardening Guide! That is a risky situation. There might be something confidential there.
 [Link to SharePoint](https://milestonesys365-my.sharepoint.com/:w:/g/personal/pib_milestone_dk/EbYjUcvIa9NNseUHf-aN9U0BGj-DqiyCmir29vABXWggew)
+
+## Task analysis & solution
 
 For this challenge, we have a link to the company SharePoint, pointing to the "Updated Milestone Hardening Guide draft" Word document. The document says "updated" so there may be some older version of the file which contains the flag...
 
