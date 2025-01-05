@@ -55,7 +55,7 @@ Ok, that looked like a reversed flag :) Let's continue with a 'Reverse' recipe i
 MilestoneCTF{s4v3-m0d1fy-L04d-r3p34t}
 ```
 
-And there we go, the flag is *MilestoneCTF{s4v3-m0d1fy-L04d-r3p34t}* :)
+And there we go, the flag is **``MilestoneCTF{s4v3-m0d1fy-L04d-r3p34t}``** :)
 
 ### Working with the Save/Load functionality
 
