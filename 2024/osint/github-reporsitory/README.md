@@ -16,7 +16,7 @@ I started by cloning the repo and inspecting the code, looking for any signs of 
 
 ![Image Preview](1.png)
 
-If we go to the particular commit with hash 891d9ec0500a4a8a9e459a2e4f534c44c52d6033, we will see the original change where the password was set to the flag. It seems like the branch was reset and forced pushed to the original commit e4887cc4a8338573732a410c5d57709300ca87ad.
+If we go to the particular commit with hash 891d9ec0500a4a8a9e459a2e4f534c44c52d6033, we will see the original change where the password was set to the flag. It seems like the fork was reset and forced pushed to the original commit e4887cc4a8338573732a410c5d57709300ca87ad.
 
 https://github.com/MatejPrasek/CyberXmas2024/commit/891d9ec0500a4a8a9e459a2e4f534c44c52d6033
 
