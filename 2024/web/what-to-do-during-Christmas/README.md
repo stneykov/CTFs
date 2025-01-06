@@ -1,4 +1,4 @@
-# What to do during Christmas? (web) (author: stn)
+# What to do during Christmas? (web) (author: snn)
 
 ## Description
 
@@ -12,7 +12,8 @@ In new browser tab enter url: http://cyberxmas.milestone.dk:[YOUR_DOCKER_PORT>/
 
 ## Task analysis & solution
 
-The challenge is in web category and when browse the url, after you will see a redirect message:
+The challenge is in the web category and when we browse the provided url, after you will see a redirect message:
+
 ![alt text](image-1.png)
 
 After these 15 seconds you are ended up to this page:
