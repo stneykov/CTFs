@@ -1,10 +1,19 @@
-![alt text](image.png)
+# The Glitch in the Giftwrap (forensics) (author: snn)
+
+## Description
+
+```shell
+The flag has been wrapped in the attached archive. Can you extract all of it?
+```
+
+## Task analysis & solution
 
 The challenge is in forensics category where we have been provided with a ```flag.zip``` file.
 
 Obviously the first thing to do is to try to open the file and extract the contents.
 
 I have installed 7z and by opening it we can see a single entry there:
+
 ![alt text](image-1.png)
 
 That's a image which contains part of the file:
@@ -135,6 +144,7 @@ EOCDR found ( 1  13571)...
 ```
 
 This looks promising as the results show one more entry:
+
 ![alt text](image-fixed_flag_repaired.png)
 
 ![alt text](image-8.png)
@@ -144,6 +154,4 @@ Now let's get them all:
 ![alt text](image-4.png) ![alt text](image-5.png) ![alt text](image-8.png) ![alt text](image-3.png) ![alt text](image-6.png)
 
 
-```shell
- # flag: MilestoneCTF{367-zip-files-442-are-334-very888888-fascinating-and-7777-flexible}
-```
+Flag was **``MilestoneCTF{367-zip-files-442-are-334-very888888-fascinating-and-7777-flexible}``**

@@ -1,4 +1,4 @@
-# A thief in Santa's House (linux) (authors: M1dwinter.sln)
+# A thief in Santa's House (linux) (author: stn)
 
 ## Description
 

@@ -1,10 +1,19 @@
-# Mean Grinch
+# Mean Grinch (forensics) (author: snn)
 
+## Description
+
+```shell
 The evil Grinch has captured our TOP SECRET communication and destroyed it. We decided to take an opportunity and make a new challenge of it! :)
 
-Attached you have the picture of what is left out of the message... can you retrieve the flag from it?
+Attached you have the picture of what is left out of the message... can you retrieve flag from it?
+```
+
+[image.jpg](image.jpg)
+
+## Task analysis & solution
 
 We download the attached image, just to see it is a photo of some cut-up document:
+
 ![Photo of destroyed document](image.jpg)
 
 At first glance, it seems the cut-up document does contain some base64 code that might be relevant to our exercise, but how do we get that? Cutting up the actual image and moving slices around might be slow and tricky. Let's do some initial investigation in Kali Linux.
@@ -23,3 +32,5 @@ That is most intriguing, a base64 string in the picture metadata. Let's try to c
 ![Solution](solution.png)
 
 Well, that really was a low-hanging fruit :) Submit the flag and it is the correct one!
+
+**``MilestoneCTF{look-for-low-hanging-fruit-first}``**

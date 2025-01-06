@@ -116,4 +116,4 @@ MlestoneCTF{web_security_can_be_simple}
 * shutting down connection #0
 ```
 
-I've got a lucky shot: *```MlestoneCTF{web_security_can_be_simple}```*
+I've got a lucky shot: **``MlestoneCTF{web_security_can_be_simple}``**

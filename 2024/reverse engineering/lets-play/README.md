@@ -1,4 +1,4 @@
-# Let's play! (reverse engineering) (authors: M1dwinter.sln)
+# Let's play! (reverse engineering) (author: stn)
 
 ## Description
 

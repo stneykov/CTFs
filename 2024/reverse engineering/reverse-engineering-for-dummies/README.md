@@ -1,4 +1,4 @@
-# Reverse engineering for dummies (reverse engineering) (authors: M1dwinter.sln)
+# Reverse engineering for dummies (reverse engineering) (author: stn)
 
 ## Description
 
