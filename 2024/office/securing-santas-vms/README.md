@@ -1,13 +1,16 @@
-# Securing Santa's VMS
+# Securing Santa's VMS (office) (author: aldi)
 
 ## Description
 
-Santa asked the Elves to secure his VMS. They were so smart that they got the latest, unpublished XProtect Hardening Guide! That is a risky situation. There might be something confidential there.
-[Link to SharePoint](https://milestonesys365-my.sharepoint.com/:w:/g/personal/pib_milestone_dk/EbYjUcvIa9NNseUHf-aN9U0BGj-DqiyCmir29vABXWggew)
+```shell
+Santa asked Elves to secure his VMS. They were so smart that they got latest, unpublished XProtect Hardening Guide! That is a risky situation. There might be something confidential there.
+
+https://milestonesys365-my.sharepoint.com/:w:/g/personal/pib_milestone_dk/EbYjUcvIa9NNseUHf-aN9U0BGj-DqiyCmir29vABXWggew
+```
 
 ## Task analysis & solution
 
-For this challenge, we have a link to the company SharePoint, pointing to the "Updated Milestone Hardening Guide draft" Word document. The document says "updated" so there may be some older version of the file which contains the flag...
+For this challenge, we have a link to the company SharePoint, pointing to the "Updated Milestone Hardening Guide draft" Word document. The document says "updated", so there may be some older version of the file which contains the flag...
 
 Let's download the document and look around. In Kali Linux, we can use `strings` to extract the strings from all sub-files contained in the docx (we know docx is an archive format that contains all relevant data structured in a bunch of sub-files):
 
@@ -19,9 +22,9 @@ But the archive structure doesn't show anything interesting...
 strings Updated\ Milestone\ Hardening\ Guide\ draft.docx
 ```
 
-String neither...
+And neither does `strings`..
 
-Ok, document metadata should be checked, using [exiftool](https://exiftool.org/):
+Next, we check the document's metadata using [exiftool](https://exiftool.org/):
 
 ![document exif data](exiftool.png)
 
@@ -54,4 +57,4 @@ We can now put the two parts together:
 ```
 MilestoneCTF{History_gets_thicker_as_it_approaches_recent_times}
 ```
-And this is the correct flag! Good job!
+And this is the correct flag! **``MilestoneCTF{History_gets_thicker_as_it_approaches_recent_times}``**

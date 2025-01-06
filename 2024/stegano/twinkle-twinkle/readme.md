@@ -1,4 +1,13 @@
-![alt text](image.png)
+# Twinkle, twinkle (stegano) (author: snn)
+
+## Description
+
+```shell
+The thing you are looking for, hides in the stars, but you cannot see it with your bare eyes.
+```
+[flag.bmp](flag.bmp)
+
+## Task analysis & solution
 
 Another image challenge in **[steganography](https://en.wikipedia.org/wiki/Steganography)** category
 
@@ -51,7 +60,7 @@ No results, nothing that contains ctf in the string...
 
 Next, search online for steganography tools and I ended up to - https://stylesuxx.github.io/steganography/
 
-However it didn't show any meaningfull results:
+However it didn't show any meaningful results:
 
 ![alt text](image-2.png)
 
